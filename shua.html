@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- page -->
+  <div id="shua" class="container shuaH_content p-3">
+    <div class="row">
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list1">
+          <img src="./img/pic_725.webp" alt="">
+          <div class="Ttl">高升大│學測模擬考</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list2">
+          <img src="./img/pic_577.webp" alt="">
+          <div class="Ttl">公職考試│記帳士講座</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list3">
+          <img src="./img/pic_515.webp" alt="">
+          <div class="Ttl">語文專區│日文能力檢驗</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list4">
+          <img src="./img/pic_611.webp" alt="">
+          <div class="Ttl">高升大│警專警大考試考試</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list5">
+          <img src="./img/pic_155.webp" alt="">
+          <div class="Ttl">就業考試│公股銀行速成班</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list6">
+          <img src="./img/pic_561.webp" alt="">
+          <div class="Ttl">語文專區│限時活動</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list7">
+          <img src="./img/pic_483.webp" alt="">
+          <div class="Ttl">公職考試│記帳士證照考取</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list8">
+          <img src="./img/pic_630.webp" alt="">
+          <div class="Ttl">語文專區│多益金書考取</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list9">
+          <img src="./img/faq-07.png" alt="">
+          <div class="Ttl">官網│FAQ改版</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list10">
+          <img src="./img/dis-07.png" alt="">
+          <div class="Ttl">官網│活動優惠</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list11">
+          <img src="./img/pic_525.webp" alt="">
+          <div class="Ttl">高升大│數位課程</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content py-3">
+        <a href="javascript:;" data-page="list12">
+          <img src="./img/pic_587.webp" alt="">
+          <div class="Ttl">公職│警察特考</div>
+        </a>
+      </div>
+      <!-- <div class="col-12 col-lg-4 content">
+                <a href="javascript:;" data-page="`">
+                <img src="./img/pic_587.webp" alt="">
+                <div class="Ttl">公職│警察特考</div></a>
+            </div> -->
+      <div class="col-12 col-lg-4 content">
+        <a href="javascript:;" data-page="list13">
+          <img src="./img/pic_160.webp" alt="">
+          <div class="Ttl">公職│司法特考</div>
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 content">
+        <!-- <a href="javascript:;" data-page="`">
+                      <img src="./img/pic_563.webp" alt="">
+                      <div class="Ttl">日文│0基礎培訓</div></a> -->
+      </div>
+    </div>
+
+    <button id="moreBtn" class="mb-5">View more</button>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/shua.js"></script>
+<script type="module">
+  import loadPage from "./js/load_page.js";
+  $('[data-page]').on('click', function () {
+    console.log(1);
+    const page = $(this).data('page')
+    loadPage(page)
+  })
+</script>
+
+</html>

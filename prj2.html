@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼎林數位行銷</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="./favicon/favicon.ico">
+</head>
+
+<body>
+    <!-- page -->
+    <div class="container mrT Wd">
+        <div class="d-flex flex-column-reverse flex-lg-row">
+            <div class=" ">
+                <div class="con_ttl">
+                    <p>鼎林數位行銷</p>
+                </div>
+
+                <div class="mb-3">
+                    <p class="sm_ttl">設計理念</p>
+                    <span class="sm_con mb-3">
+                        LOGO設計客戶希望能將自己的姓融入其中，周圍的咖啡豆有象徵著盛開的意思。在生活上遇到困難、對事物困擾的人們，來到咖啡店，能一解煩悶的心情，心情一起盛開。
+                    </span>
+                </div>
+                <div class=" ">
+                    <img class="mt-3" src="./img/dlin_.webp" alt="">
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <img src="./img/dlin_1.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/dlin_2.webp" alt="">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6">
+                        <img src="./img/dlin_3.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/dlin_4.webp" alt="">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6">
+                        <img src="./img/dlin_5.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/dlin_6.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="prjbtn">
+            <a href="#" onclick="back()">Back →</a>
+         </div>
+    </div>
+<script type="module">
+    import loadPage from "./js/load_page.js";
+    window.back = () => {
+        loadPage('shua')
+        setTimeout(() => {
+            document.querySelectorAll('.tab_title').forEach(title => {
+                title.classList.remove('clicked');
+            });
+            const button = document.querySelector('[data-tab-target="#tab02"]');
+            button.click()
+
+            console.log('999')
+        }, 200)
+    }
+</script>
+    
+</body>
+
+</html>

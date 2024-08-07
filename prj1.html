@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澄蓁運命事務所</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="./favicon/favicon.ico">
+</head>
+
+<body>
+    <!-- page -->
+    <div class="container mrT Wd">
+        <div class="d-flex flex-column-reverse flex-lg-row">
+            <div class=" ">
+                <div class="con_ttl">
+                    <p>澄蓁運命事務所</p>
+                </div>
+
+                <div class="mb-3">
+                    <p class="sm_ttl">設計理念</p>
+                    <span class="sm_con mb-3">
+                        澄蓁運命事務所，主要服務內容與命理相關，設計發想是以八卦的延伸與漸漸解開的結其意象做結合，
+                        傳達只要來到澄蓁運命事務所的人，都能把解不開的思緒解開，得到解惑；用色上選擇偏紅帶紫色系為主色調，
+                        紫色有著智慧 敏銳及癒合的象徵，藉由古人流傳下來的運命方式加上專業的服務讓來問事的都可以得到心靈上的癒合；
+                        紅色有代表著能量的特質，將這些正向能量傳達給周圍的人們。
+                    </span>
+                </div>
+                <div class=" ">
+                    <img class="mt-3" src="./img/jan_.webp" alt="">
+                </div>
+                <div class="prj_FZ">
+                    <span class="jan">PANTONE</span> 221C &nbsp;&nbsp;<span class="jan">CMYK</span> 9 100 26 38 &nbsp;&nbsp;<span class="jan">RGB</span> 145  0  72 &nbsp;&nbsp;<span class="jan">HTML</span> #910048
+                    <img class="my-3" src="./img/jan_1.webp" alt="">
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <img src="./img/jan_2.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/jan_3.webp" alt="">
+                    </div>
+                </div>
+                    <img class="mt-3" src="./img/jan_4.webp" alt="">
+                <div class="row my-4">
+                    <div class="col-6">
+                        <img src="./img/jan_5.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/jan_6.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prjbtn">
+            <a href="#" onclick="back()">Back →</a>
+         </div>
+    </div>
+
+<script type="module">
+    import loadPage from "./js/load_page.js";
+    window.back = () => {
+        loadPage('shua')
+        setTimeout(() => {
+            document.querySelectorAll('.tab_title').forEach(title => {
+                title.classList.remove('clicked');
+            });
+            const button = document.querySelector('[data-tab-target="#tab02"]');
+            button.click()
+
+            console.log('999')
+        }, 200)
+    }
+</script>
+</body>
+    
+</html>

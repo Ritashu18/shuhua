@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀚品扶輪社</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="./favicon/favicon.ico">
+</head>
+
+<body>
+    <!-- page -->
+    <div class="container mrT Wd">
+            <div class="d-flex flex-column-reverse flex-lg-row">
+                <div class=" ">
+                    <div class="con_ttl">
+                        <p>瀚品扶輪社</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <p class="sm_ttl">設計理念</p>
+                        <span class="sm_con mb-3">
+                            扶輪社舉辦公益活動，需為活動設計一款視覺標語，希望可以傳達強而有力賦予青春感，利用筆刷簡潔有力的特點作為設計靈感，讓現場民眾能為此活動有力出力。
+                        </span>
+                    </div>
+                    <div class=" ">
+                        <img class="mt-3" src="./img/rotary_.webp" alt="">
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <img src="./img/rotary1.webp" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="./img/rotary2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-6">
+                            <img src="./img/rotary3.webp" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="./img/rotary4.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="prjbtn">
+                <a href="#" onclick="back()">Back →</a>
+             </div>    
+    </div>
+<script type="module">
+    import loadPage from "./js/load_page.js";
+    window.back = () => {
+        loadPage('shua')
+        setTimeout(() => {
+            document.querySelectorAll('.tab_title').forEach(title => {
+                title.classList.remove('clicked');
+            });
+            const button = document.querySelector('[data-tab-target="#tab02"]');
+            button.click()
+
+            console.log('999')
+        }, 200)
+    }
+</script>
+    
+</body>
+
+</html>

@@ -31,7 +31,7 @@ a {
 // }
 
 .bro_R{
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .Ttl,.B_ttl {
@@ -151,15 +151,17 @@ font-family: 'Hedvig Letters Serif', serif;
             display: flex;
             align-items: center;
             justify-content: end;
-            margin-bottom: 0;
+            margin-bottom: -5px;
             margin-right: 20px;
         }
 
         .abM,
         .shuaH {
             margin-right: 10px;
-            font-size: 18px;
             color: #fff !important;
+            a{
+                padding: 5px 0;
+            }
         }
     }
 
@@ -290,6 +292,7 @@ color: #f29001;
 
 .nav_link:hover::after {
     left: 0%;
+
 }
 
 .content:nth-child(n+7) {
@@ -307,6 +310,7 @@ color: #f29001;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid transparent;
+    border-radius: 20px;
     background-color: #809ba9;
     transition: .3s;
 
@@ -482,8 +486,7 @@ footer {
       "1fr 1fr 1fr 1fr 1fr" 33.33vh
       "1fr 1fr 1fr 1fr 1fr" 33.33vh
       "1fr 1fr 1fr 1fr 1fr" 33.33vh
-      "1fr 1fr 1fr 1fr 1fr" 33.33vh
-      "1fr 1fr 1fr 1fr 1fr" 33.33vh
+    //   "1fr 1fr 1fr 1fr 1fr" 33.33vh
       "1fr 1fr 1fr 1fr 1fr" 33.33vh;
       @media (max-width: 576px) {
         grid-auto-flow:row;
@@ -504,7 +507,8 @@ footer {
     }
   }
 
-  .container_box .box.k{
+  .container_box .box.k,
+  .container_box .box.r{
     grid-column: span 3;
     @media (max-width: 576px) {
         grid-column: span 5;
@@ -562,7 +566,8 @@ footer {
 
   .container_box .box.e,
   .container_box .box.f,
-  .container_box .box.h
+  .container_box .box.h,
+  .container_box .box.l
 {
     grid-column: span 2;
     @media (max-width: 576px) {
@@ -572,9 +577,8 @@ footer {
   
   }
 
-  .container_box .box.l,
+  
   .container_box .box.x,
-  .container_box .box.r,
   .container_box .box.s {
     grid-column: span 5;
     line-height: 12.5;
@@ -585,6 +589,7 @@ footer {
 } 
   .container_box .box img {
     position: absolute;
+    border-radius: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -602,7 +607,7 @@ footer {
     border-radius: 35px;
     margin: 40px 0;
     font-size: 18px;
-    width: 10%;
+    width: 13%;
     text-align: center;
     float: right;
 

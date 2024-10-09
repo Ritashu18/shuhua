@@ -37,7 +37,15 @@ a {
 .Ttl,.B_ttl {
     font-family: 'Noto Sans TC', sans-serif;
     color: #4a525d;
-    margin: 5px;
+    margin: 5px 0 0 5px;
+}
+
+.sub_Ttl{
+    color: #f29001;
+    font-size: 14px;
+    display: block;
+    margin-left: 5px;
+    line-height: 2;
 }
 
 .mrT {
@@ -71,7 +79,7 @@ h2 {
 }
 
 .jan{
-    color:#b2005c;
+    color:#d11e4b;
 }
 
 .shuaH img{
